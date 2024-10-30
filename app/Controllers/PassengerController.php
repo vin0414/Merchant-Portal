@@ -123,7 +123,7 @@ class PassengerController extends BaseController
         $user = $this->request->getGet('user');
         $builder = $this->db->table('tblrecords_merchant');
         $builder->select('IFNULL(SUM(Amount),0)total');
-        $builder->WHERE('customerID',$user)->WHERE('BookingNumber',$code);
+        $builder->WHERE('BookingNumber',$code);
         $data = $builder->get();
         if($row = $data->getRow())
         {
@@ -136,7 +136,7 @@ class PassengerController extends BaseController
         //cargo
         $builder = $this->db->table('tblcargo_merchant');
         $builder->select('IFNULL(SUM(Rate),0)rate');
-        $builder->WHERE('userID',$user)->WHERE('BookingNumber',$code);
+        $builder->WHERE('BookingNumber',$code);
         $cargos = $builder->get();
         if($row = $cargos->getRow())
         {
@@ -148,7 +148,7 @@ class PassengerController extends BaseController
         }
         $builder = $this->db->table('tblcargo_merchant');
         $builder->select('IFNULL(SUM(Discount),0)discount');
-        $builder->WHERE('userID',$user)->WHERE('BookingNumber',$code);
+        $builder->WHERE('BookingNumber',$code);
         $cargos = $builder->get();
         if($row = $cargos->getRow())
         {
@@ -160,7 +160,7 @@ class PassengerController extends BaseController
         }
         $builder = $this->db->table('tblcargo_merchant');
         $builder->select('IFNULL(SUM(NetAmount),0)price');
-        $builder->WHERE('userID',$user)->WHERE('BookingNumber',$code);
+        $builder->WHERE('BookingNumber',$code);
         $cargos = $builder->get();
         if($row = $cargos->getRow())
         {
@@ -171,10 +171,10 @@ class PassengerController extends BaseController
             <?php
         }
         //get the admin fee
-        $admin_fee;
+        $admin_fee=0;
         $builder = $this->db->table('tblconvenience_merchant');
         $builder->select('SUM(Amount)admin_fee');
-        $builder->WHERE('userID',$user)->WHERE('BookingNumber',$code);
+        $builder->WHERE('BookingNumber',$code);
         $data = $builder->get();
         if($row = $data->getRow())
         {
@@ -210,7 +210,7 @@ class PassengerController extends BaseController
             $code = "IA-".str_pad($row->total, 7, '0', STR_PAD_LEFT)."-".$port;
         }
         //compute the total
-        $net;$total;$price;
+        $net=0;$total=0;$price=0;
         $builder = $this->db->table('tblrecords_merchant');
         $builder->select('IFNULL(SUM(Amount),0)total');
         $builder->WHERE('customerID',$user)->WHERE('BookingNumber','');
@@ -230,7 +230,7 @@ class PassengerController extends BaseController
             $price = $row->price;
         }
         //get the admin fee
-        $admin_fee;
+        $admin_fee=0;
         $builder = $this->db->table('tblconvenience_merchant');
         $builder->select('SUM(Amount)admin_fee');
         $builder->WHERE('userID',$user)->WHERE('BookingNumber','')->WHERE('Date',$date);
@@ -241,7 +241,7 @@ class PassengerController extends BaseController
         }
         $net = $total + $price + $admin_fee;
         //get the vessel
-        $vessel;
+        $vessel=0;
         $builder = $this->db->table('tblschedule');
         $builder->select('vesselID');
         $builder->WHERE('ID',$id);
@@ -366,7 +366,7 @@ class PassengerController extends BaseController
             $cargo = $row->price;
         }
         //get the admin fee
-        $admin_fee;
+        $admin_fee=0;
         $builder = $this->db->table('tblconvenience_merchant');
         $builder->select('SUM(Amount)admin_fee');
         $builder->WHERE('userID',$user)->WHERE('BookingNumber',"")->WHERE('Date',$date);
@@ -597,7 +597,11 @@ class PassengerController extends BaseController
                     //validate if already added
                     $builder = $this->db->table('tblrecords_merchant');
                     $builder->select('recordID');
-                    $builder->WHERE('Passenger_Type','DRIVER')->WHERE('ID',$schedule)->WHERE('TrxnDate',$date)->WHERE('BookingNumber','');
+                    $builder->WHERE('Passenger_Type','DRIVER')
+                            ->WHERE('ID',$schedule)
+                            ->WHERE('TrxnDate',$date)
+                            ->WHERE('BookingNumber','')
+                            ->WHERE('customerID',$user);
                     $records = $builder->get();
                     if($list = $records->getRow())
                     {
@@ -656,7 +660,7 @@ class PassengerController extends BaseController
                 {
                     //passenger category
                     $new_discount=0;$discounted=0;
-                    $pass_code="";$seat_code;
+                    $pass_code="";$seat_code="";
                     switch($customer)
                     {
                         case "Adult":
