@@ -1,0 +1,420 @@
+CRITICAL - 2024-03-20 05:18:49 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 05:19:04 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 05:22:49 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 05:24:22 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 05:24:22 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 05:26:35 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 05:29:42 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 05:33:10 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 05:33:16 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 05:34:03 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 05:34:12 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 05:34:13 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 05:44:14 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 05:50:50 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 06:03:51 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 06:03:51 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 06:06:31 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 06:33:11 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 06:33:16 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 06:34:02 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 06:37:35 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 06:39:06 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 06:40:13 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 06:44:59 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 06:46:13 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 06:47:10 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 06:47:24 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 06:47:27 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 06:55:20 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 06:57:31 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 06:57:56 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 06:58:01 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 06:58:02 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 06:58:56 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 06:58:57 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 07:00:28 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 07:00:28 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 07:00:29 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 07:00:29 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 07:00:29 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 07:00:29 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 07:03:10 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 07:03:41 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 07:03:41 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 07:03:53 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 07:03:56 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 07:04:11 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 07:05:36 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 07:05:57 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 07:22:59 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 07:23:31 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 07:24:39 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 07:26:39 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 07:28:18 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 07:29:11 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 07:29:17 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 07:31:26 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 07:35:05 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 07:35:06 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 07:35:37 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 568.
+ 1 APPPATH/Controllers/PassengerController.php(568): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 568)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

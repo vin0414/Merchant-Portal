@@ -1,0 +1,195 @@
+CRITICAL - 2024-04-03 08:04:34 --> Undefined property: stdClass::$Seat_Type
+in APPPATH/Controllers/TransactionController.php on line 261.
+ 1 APPPATH/Controllers/TransactionController.php(261): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Seat_Type', 'APPPATH/Controllers/TransactionController.php', 261)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->eticket('IA-0000010-11')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 08:16:21 --> Undefined property: stdClass::$Passenge_Typer
+in APPPATH/Controllers/TransactionController.php on line 274.
+ 1 APPPATH/Controllers/TransactionController.php(274): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Passenge_Typer', 'APPPATH/Controllers/TransactionController.php', 274)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->eticket('IA-0000010-11')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 08:27:28 --> Undefined property: stdClass::$Passenge_Typer
+in APPPATH/Controllers/TransactionController.php on line 273.
+ 1 APPPATH/Controllers/TransactionController.php(273): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Passenge_Typer', 'APPPATH/Controllers/TransactionController.php', 273)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->eticket('IA-0000010-11')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 08:30:42 --> Undefined property: stdClass::$Passenge_Typer
+in APPPATH/Controllers/TransactionController.php on line 273.
+ 1 APPPATH/Controllers/TransactionController.php(273): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Passenge_Typer', 'APPPATH/Controllers/TransactionController.php', 273)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->eticket('IA-0000010-11')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 08:33:48 --> Undefined variable $passenger_type
+in APPPATH/Controllers/TransactionController.php on line 333.
+ 1 APPPATH/Controllers/TransactionController.php(333): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $passenger_type', 'APPPATH/Controllers/TransactionController.php', 333)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->eticket('IA-0000010-11')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 08:34:01 --> Undefined variable $passenger_type
+in APPPATH/Controllers/TransactionController.php on line 333.
+ 1 APPPATH/Controllers/TransactionController.php(333): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $passenger_type', 'APPPATH/Controllers/TransactionController.php', 333)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->eticket('IA-0000010-11')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 08:35:56 --> Undefined variable $passenger_type
+in APPPATH/Controllers/TransactionController.php on line 334.
+ 1 APPPATH/Controllers/TransactionController.php(334): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $passenger_type', 'APPPATH/Controllers/TransactionController.php', 334)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->eticket('IA-0000010-11')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 08:46:53 --> Undefined property: stdClass::$Passenge_Typer
+in APPPATH/Controllers/TransactionController.php on line 274.
+ 1 APPPATH/Controllers/TransactionController.php(274): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Passenge_Typer', 'APPPATH/Controllers/TransactionController.php', 274)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->eticket('IA-0000010-11')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 08:47:45 --> Undefined property: stdClass::$Passenge_Typer
+in APPPATH/Controllers/TransactionController.php on line 274.
+ 1 APPPATH/Controllers/TransactionController.php(274): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Passenge_Typer', 'APPPATH/Controllers/TransactionController.php', 274)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->eticket('IA-0000010-11')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 08:47:59 --> Undefined constant "App\Controllers\IA"
+in APPPATH/Controllers/TransactionController.php on line 254.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->eticket('IA-0000010-11')
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 08:59:06 --> Undefined property: stdClass::$Passenge_Typer
+in APPPATH/Controllers/TransactionController.php on line 209.
+ 1 APPPATH/Controllers/TransactionController.php(209): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Passenge_Typer', 'APPPATH/Controllers/TransactionController.php', 209)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->eticket('IA-0000937-11')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 08:59:30 --> Undefined property: stdClass::$Passenge_Typer
+in APPPATH/Controllers/TransactionController.php on line 209.
+ 1 APPPATH/Controllers/TransactionController.php(209): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Passenge_Typer', 'APPPATH/Controllers/TransactionController.php', 209)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->eticket('IA-0000937-11')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 09:35:32 --> Undefined property: stdClass::$rate
+in APPPATH/Controllers/TransactionController.php on line 182.
+ 1 APPPATH/Controllers/TransactionController.php(182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$rate', 'APPPATH/Controllers/TransactionController.php', 182)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->eticket('IA-0000986-12')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 09:38:17 --> Undefined property: stdClass::$Passenge_Typer
+in APPPATH/Controllers/TransactionController.php on line 291.
+ 1 APPPATH/Controllers/TransactionController.php(291): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Passenge_Typer', 'APPPATH/Controllers/TransactionController.php', 291)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->eticket('IA-0000937-11')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 09:39:23 --> Undefined property: stdClass::$Passenge_Typer
+in APPPATH/Controllers/TransactionController.php on line 290.
+ 1 APPPATH/Controllers/TransactionController.php(290): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Passenge_Typer', 'APPPATH/Controllers/TransactionController.php', 290)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->eticket('IA-0000937-11')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 09:40:38 --> Undefined property: stdClass::$Passenge_Typer
+in APPPATH/Controllers/TransactionController.php on line 290.
+ 1 APPPATH/Controllers/TransactionController.php(290): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Passenge_Typer', 'APPPATH/Controllers/TransactionController.php', 290)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->eticket('IA-0000937-11')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 09:41:03 --> Undefined property: stdClass::$Passenge_Typer
+in APPPATH/Controllers/TransactionController.php on line 289.
+ 1 APPPATH/Controllers/TransactionController.php(289): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Passenge_Typer', 'APPPATH/Controllers/TransactionController.php', 289)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->eticket('IA-0000937-11')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 09:42:25 --> Undefined property: stdClass::$Passenge_Typer
+in APPPATH/Controllers/TransactionController.php on line 277.
+ 1 APPPATH/Controllers/TransactionController.php(277): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Passenge_Typer', 'APPPATH/Controllers/TransactionController.php', 277)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->eticket('IA-0000937-11')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 09:46:05 --> Undefined property: stdClass::$Passenge_Typer
+in APPPATH/Controllers/TransactionController.php on line 278.
+ 1 APPPATH/Controllers/TransactionController.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Passenge_Typer', 'APPPATH/Controllers/TransactionController.php', 278)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->eticket('IA-0000937-11')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 09:46:11 --> Undefined property: stdClass::$Passenge_Typer
+in APPPATH/Controllers/TransactionController.php on line 278.
+ 1 APPPATH/Controllers/TransactionController.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Passenge_Typer', 'APPPATH/Controllers/TransactionController.php', 278)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->eticket('IA-0000937-11')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 09:51:09 --> Undefined property: stdClass::$Passenge_Typer
+in APPPATH/Controllers/TransactionController.php on line 278.
+ 1 APPPATH/Controllers/TransactionController.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Passenge_Typer', 'APPPATH/Controllers/TransactionController.php', 278)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->eticket('IA-0000937-11')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 09:53:08 --> Undefined property: stdClass::$Passenge_Typer
+in APPPATH/Controllers/TransactionController.php on line 278.
+ 1 APPPATH/Controllers/TransactionController.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Passenge_Typer', 'APPPATH/Controllers/TransactionController.php', 278)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->eticket('IA-0000937-11')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 09:53:29 --> Undefined property: stdClass::$Passenge_Typer
+in APPPATH/Controllers/TransactionController.php on line 278.
+ 1 APPPATH/Controllers/TransactionController.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Passenge_Typer', 'APPPATH/Controllers/TransactionController.php', 278)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->eticket('IA-0000937-11')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 09:54:35 --> Undefined variable $code2
+in APPPATH/Controllers/TransactionController.php on line 401.
+ 1 APPPATH/Controllers/TransactionController.php(401): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $code2', 'APPPATH/Controllers/TransactionController.php', 401)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->eticket('IA-0000937-11')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 09:54:40 --> Undefined variable $code2
+in APPPATH/Controllers/TransactionController.php on line 401.
+ 1 APPPATH/Controllers/TransactionController.php(401): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $code2', 'APPPATH/Controllers/TransactionController.php', 401)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->eticket('IA-0000937-11')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 09:54:42 --> Undefined variable $code2
+in APPPATH/Controllers/TransactionController.php on line 401.
+ 1 APPPATH/Controllers/TransactionController.php(401): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $code2', 'APPPATH/Controllers/TransactionController.php', 401)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->eticket('IA-0000937-11')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 09:58:35 --> Undefined property: stdClass::$Passenge_Type
+in APPPATH/Controllers/TransactionController.php on line 278.
+ 1 APPPATH/Controllers/TransactionController.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Passenge_Type', 'APPPATH/Controllers/TransactionController.php', 278)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->eticket('IA-0000937-11')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-03 09:58:42 --> Undefined property: stdClass::$Passenge_Type
+in APPPATH/Controllers/TransactionController.php on line 278.
+ 1 APPPATH/Controllers/TransactionController.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Passenge_Type', 'APPPATH/Controllers/TransactionController.php', 278)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->eticket('IA-0000937-11')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

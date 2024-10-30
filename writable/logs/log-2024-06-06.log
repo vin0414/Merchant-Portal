@@ -1,0 +1,8 @@
+CRITICAL - 2024-06-06 02:40:21 --> Undefined variable $route
+in APPPATH/Controllers/Home.php on line 493.
+ 1 APPPATH/Controllers/Home.php(493): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $route', 'APPPATH/Controllers/Home.php', 493)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->Schedules()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-06 14:15:12 --> Session: Unable to write data.

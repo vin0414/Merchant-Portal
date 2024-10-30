@@ -1,0 +1,145 @@
+CRITICAL - 2024-04-01 05:26:54 --> Undefined variable $route
+in APPPATH/Controllers/Home.php on line 418.
+ 1 APPPATH/Controllers/Home.php(418): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $route', 'APPPATH/Controllers/Home.php', 418)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->Schedules()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 07:06:59 --> require_once(assets/php/QRCode.class.php): Failed to open stream: No such file or directory
+in APPPATH/Controllers/TransactionController.php on line 5.
+ 1 APPPATH/Controllers/TransactionController.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(assets/php/QRCode.class.php): Failed to open stream: No such file or directory', 'APPPATH/Controllers/TransactionController.php', 5)
+ 2 APPPATH/Controllers/TransactionController.php(5): require_once()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('APPPATH/Controllers/TransactionController.php')
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/TransactionController.php')
+ 5 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\TransactionController')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\TransactionController')
+ 7 SYSTEMPATH/CodeIgniter.php(892): class_exists('\\App\\Controllers\\TransactionController', true)
+ 8 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 07:07:52 --> require_once(assets/php/QRCode.class.php): Failed to open stream: No such file or directory
+in APPPATH/Controllers/TransactionController.php on line 5.
+ 1 APPPATH/Controllers/TransactionController.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(assets/php/QRCode.class.php): Failed to open stream: No such file or directory', 'APPPATH/Controllers/TransactionController.php', 5)
+ 2 APPPATH/Controllers/TransactionController.php(5): require_once()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('APPPATH/Controllers/TransactionController.php')
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/TransactionController.php')
+ 5 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\TransactionController')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\TransactionController')
+ 7 SYSTEMPATH/CodeIgniter.php(892): class_exists('\\App\\Controllers\\TransactionController', true)
+ 8 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 07:07:57 --> require_once(assets/php/QRCode.class.php): Failed to open stream: No such file or directory
+in APPPATH/Controllers/TransactionController.php on line 5.
+ 1 APPPATH/Controllers/TransactionController.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(assets/php/QRCode.class.php): Failed to open stream: No such file or directory', 'APPPATH/Controllers/TransactionController.php', 5)
+ 2 APPPATH/Controllers/TransactionController.php(5): require_once()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('APPPATH/Controllers/TransactionController.php')
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/TransactionController.php')
+ 5 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\TransactionController')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\TransactionController')
+ 7 SYSTEMPATH/CodeIgniter.php(892): class_exists('\\App\\Controllers\\TransactionController', true)
+ 8 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 07:09:17 --> require_once(assets/php/QRCode.class.php): Failed to open stream: No such file or directory
+in APPPATH/Controllers/TransactionController.php on line 5.
+ 1 APPPATH/Controllers/TransactionController.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(assets/php/QRCode.class.php): Failed to open stream: No such file or directory', 'APPPATH/Controllers/TransactionController.php', 5)
+ 2 APPPATH/Controllers/TransactionController.php(5): require_once()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('APPPATH/Controllers/TransactionController.php')
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/TransactionController.php')
+ 5 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\TransactionController')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\TransactionController')
+ 7 SYSTEMPATH/CodeIgniter.php(892): class_exists('\\App\\Controllers\\TransactionController', true)
+ 8 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 07:09:19 --> require_once(assets/php/QRCode.class.php): Failed to open stream: No such file or directory
+in APPPATH/Controllers/TransactionController.php on line 5.
+ 1 APPPATH/Controllers/TransactionController.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(assets/php/QRCode.class.php): Failed to open stream: No such file or directory', 'APPPATH/Controllers/TransactionController.php', 5)
+ 2 APPPATH/Controllers/TransactionController.php(5): require_once()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('APPPATH/Controllers/TransactionController.php')
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/TransactionController.php')
+ 5 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\TransactionController')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\TransactionController')
+ 7 SYSTEMPATH/CodeIgniter.php(892): class_exists('\\App\\Controllers\\TransactionController', true)
+ 8 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 07:15:14 --> require_once(assets/php/QRCode.class.php): Failed to open stream: No such file or directory
+in APPPATH/Controllers/TransactionController.php on line 5.
+ 1 APPPATH/Controllers/TransactionController.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(assets/php/QRCode.class.php): Failed to open stream: No such file or directory', 'APPPATH/Controllers/TransactionController.php', 5)
+ 2 APPPATH/Controllers/TransactionController.php(5): require_once()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('APPPATH/Controllers/TransactionController.php')
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/TransactionController.php')
+ 5 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\TransactionController')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\TransactionController')
+ 7 SYSTEMPATH/CodeIgniter.php(892): class_exists('\\App\\Controllers\\TransactionController', true)
+ 8 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 07:15:32 --> require_once(assets/php/QRCode.class.php): Failed to open stream: No such file or directory
+in APPPATH/Controllers/TransactionController.php on line 5.
+ 1 APPPATH/Controllers/TransactionController.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(assets/php/QRCode.class.php): Failed to open stream: No such file or directory', 'APPPATH/Controllers/TransactionController.php', 5)
+ 2 APPPATH/Controllers/TransactionController.php(5): require_once()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('APPPATH/Controllers/TransactionController.php')
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/TransactionController.php')
+ 5 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\TransactionController')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\TransactionController')
+ 7 SYSTEMPATH/CodeIgniter.php(892): class_exists('\\App\\Controllers\\TransactionController', true)
+ 8 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 07:15:39 --> require_once(assets/php/QRCode.class.php): Failed to open stream: No such file or directory
+in APPPATH/Controllers/TransactionController.php on line 5.
+ 1 APPPATH/Controllers/TransactionController.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(assets/php/QRCode.class.php): Failed to open stream: No such file or directory', 'APPPATH/Controllers/TransactionController.php', 5)
+ 2 APPPATH/Controllers/TransactionController.php(5): require_once()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('APPPATH/Controllers/TransactionController.php')
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/TransactionController.php')
+ 5 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\TransactionController')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\TransactionController')
+ 7 SYSTEMPATH/CodeIgniter.php(892): class_exists('\\App\\Controllers\\TransactionController', true)
+ 8 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 07:33:28 --> require_once(assets/php/QRCode.class.php): Failed to open stream: No such file or directory
+in APPPATH/Controllers/Home.php on line 6.
+ 1 APPPATH/Controllers/Home.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(assets/php/QRCode.class.php): Failed to open stream: No such file or directory', 'APPPATH/Controllers/Home.php', 6)
+ 2 APPPATH/Controllers/Home.php(6): require_once()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('APPPATH/Controllers/Home.php')
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Home.php')
+ 5 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 7 SYSTEMPATH/CodeIgniter.php(892): class_exists('\\App\\Controllers\\Home', true)
+ 8 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-01 09:56:18 --> mysqli_sql_exception: Unknown column 'd.Status' in 'where clause' in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `a`.*, `...', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.*, `...')
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.*, `...')
+#3 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `...', Array, false)
+#4 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(274): CodeIgniter\Database\BaseBuilder->get()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->eticket('IA-0000017-11')
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-04-01 09:56:18 --> Unknown column 'd.Status' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `b`.`TimeDeparture`, `b`.`Route`, `c`.`Name`, FORMAT(a.Amount, 2) AS BaseFare, FORMAT(d.TotalAmount, 2) as overall, FORMAT(IFNULL(g.NetAmount, 0), 2) AS NetAmount, `e`.`Name` `vessel`, FORMAT(f.Amount, 2) AS ConvFee
+FROM `tblrecords_merchant` `a`
+LEFT JOIN `tblschedule` `b` ON `b`.`ID`=`a`.`ID`
+LEFT JOIN `tblvehicles` `c` ON `c`.`vID`=`a`.`vID`
+LEFT JOIN `tblcustomer_payment_merchant` `d` ON `d`.`BookingNumber`=`a`.`BookingNumber`
+LEFT JOIN `tblvessels` `e` ON `e`.`vesselID`=`b`.`vesselID`
+LEFT JOIN `tblconvenience_merchant` `f` ON `f`.`BookingNumber`=`a`.`BookingNumber`
+LEFT JOIN `tblcargo_merchant` `g` ON `g`.`BookingNumber`=`a`.`BookingNumber`
+WHERE `a`.`BookingNumber` = :a.BookingNumber:
+AND `d`.`Status` = :d.Status:
+GROUP BY `a`.`TrxnDate`, `a`.`recordID`', [...], false)
+ 2 APPPATH/Controllers/TransactionController.php(274): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->eticket('IA-0000017-11')
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

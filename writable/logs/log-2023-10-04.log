@@ -1,0 +1,554 @@
+INFO - 2023-10-04 00:58:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-04 00:58:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-04 00:58:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-04 00:58:23 --> mysqli_sql_exception: Unknown column 'a.TotalAmount' in 'field list' in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(295): mysqli->query('Select FORMAT(I...', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('Select FORMAT(I...')
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('Select FORMAT(I...')
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(303): CodeIgniter\Database\BaseConnection->query('Select FORMAT(I...', Array)
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->dailyExpenses()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2023-10-04 00:58:23 --> mysqli_sql_exception: Unknown column 'a.TrxnDate' in 'field list' in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `a`.`Trx...', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`Trx...')
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`Trx...')
+#3 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`Trx...', Array, false)
+#4 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(408): CodeIgniter\Database\BaseBuilder->get()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->Recent()
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-10-04 00:58:23 --> mysqli_sql_exception: Unknown column 'a.TotalAmount' in 'field list' in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(295): mysqli->query('Select FORMAT(I...', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('Select FORMAT(I...')
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('Select FORMAT(I...')
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(321): CodeIgniter\Database\BaseConnection->query('Select FORMAT(I...', Array)
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->monthlyExpenses()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-10-04 00:58:23 --> Unknown column 'a.TotalAmount' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/TransactionController.php(303): CodeIgniter\Database\BaseConnection->query('Select FORMAT(IFNULL(SUM(a.TotalAmount),0),2)total from tblpayment a LEFT JOIN 
+        (Select customerID,BookingNumber from tblrecords GROUP BY BookingNumber) b ON b.BookingNumber=a.BookingNumber WHERE a.Remarks=\'PAID\' 
+        AND b.customerID=:user: AND a.TrxnDate=:date:', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->dailyExpenses()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 00:58:23 --> Unknown column 'a.TotalAmount' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/TransactionController.php(321): CodeIgniter\Database\BaseConnection->query('Select FORMAT(IFNULL(SUM(a.TotalAmount),0),2)total from tblpayment a LEFT JOIN 
+        (Select customerID,BookingNumber from tblrecords GROUP BY BookingNumber) b ON b.BookingNumber=a.BookingNumber WHERE a.Remarks=\'PAID\' 
+        AND b.customerID=:user: AND DATE_FORMAT(a.TrxnDate,\'%m\')=:month: AND DATE_FORMAT(a.TrxnDate,\'%Y\')=:year:', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->monthlyExpenses()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 00:58:23 --> Unknown column 'a.TrxnDate' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`TrxnDate`, `a`.`BookingNumber`, FORMAT(a.TotalAmount, 2)Amount, `a`.`Remarks`, `c`.`Route`
+FROM `tblpayment` `a`
+LEFT JOIN `tblrecords` `b` ON `b`.`BookingNumber`=`a`.`BookingNumber`
+LEFT JOIN `tblschedule` `c` ON `c`.`ID`=`b`.`ID`
+WHERE `b`.`customerID` = :b.customerID:
+GROUP BY `a`.`BookingNumber`
+ORDER BY `a`.`BookingNumber` DESC
+ LIMIT 10', [...], false)
+ 2 APPPATH/Controllers/TransactionController.php(408): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->Recent()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-04 00:58:23 --> mysqli_sql_exception: Unknown column 'a.Remarks' in 'where clause' in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(295): mysqli->query('Select COUNT(a....', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('Select COUNT(a....')
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('Select COUNT(a....')
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(338): CodeIgniter\Database\BaseConnection->query('Select COUNT(a....', Array)
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->totalReserved()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-10-04 00:58:23 --> Unknown column 'a.Remarks' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/TransactionController.php(338): CodeIgniter\Database\BaseConnection->query('Select COUNT(a.BookingNumber)total from tblpayment a LEFT JOIN
+        (Select customerID,BookingNumber from tblrecords GROUP BY BookingNumber)b ON b.BookingNumber=a.BookingNumber
+        WHERE b.customerID=:user: AND a.Remarks=\'PAID\'', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->totalReserved()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-04 00:58:23 --> mysqli_sql_exception: Unknown column 'a.Remarks' in 'where clause' in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(295): mysqli->query('Select COUNT(a....', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('Select COUNT(a....')
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('Select COUNT(a....')
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(353): CodeIgniter\Database\BaseConnection->query('Select COUNT(a....', Array)
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->totalPending()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-10-04 00:58:23 --> Unknown column 'a.Remarks' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/TransactionController.php(353): CodeIgniter\Database\BaseConnection->query('Select COUNT(a.BookingNumber)total from tblpayment a LEFT JOIN
+        (Select customerID,BookingNumber from tblrecords GROUP BY BookingNumber)b ON b.BookingNumber=a.BookingNumber
+        WHERE b.customerID=:user: AND a.Remarks=\'Unpaid\'', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->totalPending()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-04 00:58:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-04 00:59:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-04 01:00:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-04 01:00:54 --> mysqli_sql_exception: Unknown column 'a.TrxnDate' in 'field list' in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `a`.`Trx...', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`Trx...')
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`Trx...')
+#3 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`Trx...', Array, false)
+#4 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(408): CodeIgniter\Database\BaseBuilder->get()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->Recent()
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-04 01:00:54 --> Unknown column 'a.TrxnDate' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`TrxnDate`, `a`.`BookingNumber`, FORMAT(a.TotalAmount, 2)Amount, `a`.`Remarks`, `c`.`Route`
+FROM `tblpayment` `a`
+LEFT JOIN `tblrecords` `b` ON `b`.`BookingNumber`=`a`.`BookingNumber`
+LEFT JOIN `tblschedule` `c` ON `c`.`ID`=`b`.`ID`
+WHERE `b`.`customerID` = :b.customerID:
+GROUP BY `a`.`BookingNumber`
+ORDER BY `a`.`BookingNumber` DESC
+ LIMIT 10', [...], false)
+ 2 APPPATH/Controllers/TransactionController.php(408): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->Recent()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-04 01:00:54 --> mysqli_sql_exception: Unknown column 'a.TotalAmount' in 'field list' in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(295): mysqli->query('Select FORMAT(I...', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('Select FORMAT(I...')
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('Select FORMAT(I...')
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(303): CodeIgniter\Database\BaseConnection->query('Select FORMAT(I...', Array)
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->dailyExpenses()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-10-04 01:00:54 --> Unknown column 'a.TotalAmount' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/TransactionController.php(303): CodeIgniter\Database\BaseConnection->query('Select FORMAT(IFNULL(SUM(a.TotalAmount),0),2)total from tblpayment a LEFT JOIN 
+        (Select customerID,BookingNumber from tblrecords GROUP BY BookingNumber) b ON b.BookingNumber=a.BookingNumber WHERE a.Remarks=\'PAID\' 
+        AND b.customerID=:user: AND a.TrxnDate=:date:', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->dailyExpenses()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-04 01:00:54 --> mysqli_sql_exception: Unknown column 'a.Remarks' in 'where clause' in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(295): mysqli->query('Select COUNT(a....', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('Select COUNT(a....')
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('Select COUNT(a....')
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(338): CodeIgniter\Database\BaseConnection->query('Select COUNT(a....', Array)
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->totalReserved()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-10-04 01:00:54 --> Unknown column 'a.Remarks' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/TransactionController.php(338): CodeIgniter\Database\BaseConnection->query('Select COUNT(a.BookingNumber)total from tblpayment a LEFT JOIN
+        (Select customerID,BookingNumber from tblrecords GROUP BY BookingNumber)b ON b.BookingNumber=a.BookingNumber
+        WHERE b.customerID=:user: AND a.Remarks=\'PAID\'', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->totalReserved()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-04 01:00:54 --> mysqli_sql_exception: Unknown column 'a.TotalAmount' in 'field list' in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(295): mysqli->query('Select FORMAT(I...', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('Select FORMAT(I...')
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('Select FORMAT(I...')
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(321): CodeIgniter\Database\BaseConnection->query('Select FORMAT(I...', Array)
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->monthlyExpenses()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-10-04 01:00:54 --> Unknown column 'a.TotalAmount' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/TransactionController.php(321): CodeIgniter\Database\BaseConnection->query('Select FORMAT(IFNULL(SUM(a.TotalAmount),0),2)total from tblpayment a LEFT JOIN 
+        (Select customerID,BookingNumber from tblrecords GROUP BY BookingNumber) b ON b.BookingNumber=a.BookingNumber WHERE a.Remarks=\'PAID\' 
+        AND b.customerID=:user: AND DATE_FORMAT(a.TrxnDate,\'%m\')=:month: AND DATE_FORMAT(a.TrxnDate,\'%Y\')=:year:', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->monthlyExpenses()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-04 01:00:54 --> mysqli_sql_exception: Unknown column 'a.Remarks' in 'where clause' in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(295): mysqli->query('Select COUNT(a....', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('Select COUNT(a....')
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('Select COUNT(a....')
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(353): CodeIgniter\Database\BaseConnection->query('Select COUNT(a....', Array)
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->totalPending()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-10-04 01:00:54 --> Unknown column 'a.Remarks' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Controllers/TransactionController.php(353): CodeIgniter\Database\BaseConnection->query('Select COUNT(a.BookingNumber)total from tblpayment a LEFT JOIN
+        (Select customerID,BookingNumber from tblrecords GROUP BY BookingNumber)b ON b.BookingNumber=a.BookingNumber
+        WHERE b.customerID=:user: AND a.Remarks=\'Unpaid\'', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->totalPending()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-04 01:06:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-04 01:06:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-04 01:07:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-04 01:07:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-04 01:08:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-04 01:08:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-04 01:08:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-04 01:08:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-04 01:09:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-04 01:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-04 01:09:34 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 367.
+ 1 APPPATH/Controllers/PassengerController.php(367): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 367)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->generateSeat()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 01:40:31 --> Undefined variable $depart
+in APPPATH/Controllers/PassengerController.php on line 498.
+ 1 APPPATH/Controllers/PassengerController.php(498): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depart', 'APPPATH/Controllers/PassengerController.php', 498)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-04 01:40:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-04 01:40:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-04 01:40:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-04 01:55:31 --> Class "GuzzleHttp\Client" not found
+in APPPATH/Controllers/Home.php on line 494.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->getCSPP()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 01:55:35 --> Class "GuzzleHttp\Client" not found
+in APPPATH/Controllers/Home.php on line 494.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->getCSPP()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 01:55:48 --> Class "GuzzleHttp\Client" not found
+in APPPATH/Controllers/Home.php on line 494.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->getCSPP()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 01:56:00 --> Class "GuzzleHttp\Client" not found
+in APPPATH/Controllers/Home.php on line 494.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->getCSPP()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 01:56:19 --> Class "GuzzleHttp\Client" not found
+in APPPATH/Controllers/Home.php on line 494.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->getCSPP()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 01:56:52 --> Class "GuzzleHttp\Client" not found
+in APPPATH/Controllers/Home.php on line 494.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->getCSPP()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 01:57:08 --> Class "GuzzleHttp\Client" not found
+in APPPATH/Controllers/Home.php on line 494.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->getCSPP()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 01:58:01 --> Class "GuzzleHttp\Client" not found
+in APPPATH/Controllers/Home.php on line 494.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->getCSPP()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 01:59:44 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 924.
+ 1 SYSTEMPATH/BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH/Model.php(755): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH/Controllers/Home.php(514): CodeIgniter\Model->update()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->getCSPP()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 02:00:13 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 924.
+ 1 SYSTEMPATH/BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH/Model.php(755): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH/Controllers/Home.php(514): CodeIgniter\Model->update()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->getCSPP()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 02:01:59 --> Undefined variable $depart
+in APPPATH/Controllers/PassengerController.php on line 498.
+ 1 APPPATH/Controllers/PassengerController.php(498): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depart', 'APPPATH/Controllers/PassengerController.php', 498)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 02:02:42 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 924.
+ 1 SYSTEMPATH/BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH/Model.php(755): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH/Controllers/Home.php(514): CodeIgniter\Model->update()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->getCSPP()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 02:02:51 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 924.
+ 1 SYSTEMPATH/BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH/Model.php(755): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH/Controllers/Home.php(514): CodeIgniter\Model->update()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->getCSPP()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 02:03:27 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 533.
+ 1 APPPATH/Controllers/PassengerController.php(533): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 533)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-04 02:04:15 --> mysqli_sql_exception: Unknown column 'Age' in 'field list' in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /home4/cvr8mc2c/merchant/system/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home4/cvr8mc2c/merchant/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 /home4/cvr8mc2c/merchant/system/Model.php(729): CodeIgniter\BaseModel->insert(Array, false)
+#7 /home4/cvr8mc2c/merchant/system/BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 /home4/cvr8mc2c/merchant/app/Controllers/PassengerController.php(612): CodeIgniter\BaseModel->save(Array)
+#9 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+#10 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+#11 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-10-04 02:04:15 --> Unknown column 'Age' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tblrecords` (`portID`, `ID`, `agentID`, `Passenger_Type`, `ID_number`, `Discount`, `Amount`, `vID`, `mID`, `plate_number`, `Fullname`, `Contact`, `Age`, `EmailAddress`, `Address`, `Gender`, `Insured`, `Accommodation`, `SeatNumber`, `TrxnDate`, `BookingNumber`, `Remarks`, `Status`, `customerID`) VALUES (:portID:, :ID:, :agentID:, :Passenger_Type:, :ID_number:, :Discount:, :Amount:, :vID:, :mID:, :plate_number:, :Fullname:, :Contact:, :Age:, :EmailAddress:, :Address:, :Gender:, :Insured:, :Accommodation:, :SeatNumber:, :TrxnDate:, :BookingNumber:, :Remarks:, :Status:, :customerID:)', [...], false)
+ 2 SYSTEMPATH/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(729): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH/BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH/Controllers/PassengerController.php(612): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 02:04:33 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 924.
+ 1 SYSTEMPATH/BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH/Model.php(755): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH/Controllers/Home.php(514): CodeIgniter\Model->update()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->getCSPP()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-04 02:05:38 --> mysqli_sql_exception: Unknown column 'Age' in 'where clause' in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `recordI...', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `recordI...')
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `recordI...')
+#3 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `recordI...', Array, false)
+#4 /home4/cvr8mc2c/merchant/app/Controllers/PassengerController.php(622): CodeIgniter\Database\BaseBuilder->get()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-04 02:05:38 --> Unknown column 'Age' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `recordID`
+FROM `tblrecords`
+WHERE `Fullname` = :Fullname:
+AND `Gender` = :Gender:
+AND `Age` = :Age:
+AND `ID` = :ID:
+AND `TrxnDate` = :TrxnDate:', [...], false)
+ 2 APPPATH/Controllers/PassengerController.php(622): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-04 02:07:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-04 02:08:03 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 924.
+ 1 SYSTEMPATH/BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH/Model.php(755): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH/Controllers/Home.php(514): CodeIgniter\Model->update()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->getCSPP()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-04 02:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-04 02:12:35 --> Class "App\Controllers\Options" not found
+in APPPATH/Controllers/Home.php on line 618.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->getCSPP()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 02:13:13 --> Class "App\Controllers\Options" not found
+in APPPATH/Controllers/Home.php on line 618.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->getCSPP()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 02:26:31 --> Array to string conversion
+in APPPATH/Controllers/PassengerController.php on line 528.
+ 1 APPPATH/Controllers/PassengerController.php(528): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH/Controllers/PassengerController.php', 528)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 02:26:40 --> Array to string conversion
+in APPPATH/Controllers/PassengerController.php on line 528.
+ 1 APPPATH/Controllers/PassengerController.php(528): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH/Controllers/PassengerController.php', 528)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 02:29:58 --> Array to string conversion
+in APPPATH/Controllers/PassengerController.php on line 529.
+ 1 APPPATH/Controllers/PassengerController.php(529): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH/Controllers/PassengerController.php', 529)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 02:30:03 --> Array to string conversion
+in APPPATH/Controllers/PassengerController.php on line 529.
+ 1 APPPATH/Controllers/PassengerController.php(529): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH/Controllers/PassengerController.php', 529)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 02:30:15 --> Undefined array key 0
+in APPPATH/Controllers/PassengerController.php on line 529.
+ 1 APPPATH/Controllers/PassengerController.php(529): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/PassengerController.php', 529)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-04 02:30:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-04 02:30:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-04 02:31:20 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 533.
+ 1 APPPATH/Controllers/PassengerController.php(533): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 533)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 02:31:26 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 533.
+ 1 APPPATH/Controllers/PassengerController.php(533): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 533)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 02:33:08 --> Undefined array key 0
+in APPPATH/Controllers/PassengerController.php on line 536.
+ 1 APPPATH/Controllers/PassengerController.php(536): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/PassengerController.php', 536)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 02:33:38 --> Undefined array key 0
+in APPPATH/Controllers/PassengerController.php on line 534.
+ 1 APPPATH/Controllers/PassengerController.php(534): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/PassengerController.php', 534)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 02:33:53 --> Undefined array key 0
+in APPPATH/Controllers/PassengerController.php on line 534.
+ 1 APPPATH/Controllers/PassengerController.php(534): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/PassengerController.php', 534)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 02:36:57 --> Undefined array key 0
+in APPPATH/Controllers/PassengerController.php on line 534.
+ 1 APPPATH/Controllers/PassengerController.php(534): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/PassengerController.php', 534)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 02:37:10 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 533.
+ 1 APPPATH/Controllers/PassengerController.php(533): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 533)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 02:40:56 --> Cannot use [] for reading
+in APPPATH/Controllers/PassengerController.php on line 532.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-10-04 02:49:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-04 02:49:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-04 02:50:52 --> Undefined variable $info
+in APPPATH/Controllers/Home.php on line 293.
+ 1 APPPATH/Controllers/Home.php(293): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $info', 'APPPATH/Controllers/Home.php', 293)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->Departure()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 02:51:00 --> Undefined variable $info
+in APPPATH/Controllers/Home.php on line 293.
+ 1 APPPATH/Controllers/Home.php(293): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $info', 'APPPATH/Controllers/Home.php', 293)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->Departure()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-04 02:51:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-04 02:52:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-04 02:57:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-04 03:07:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-04 03:07:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-04 05:12:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-04 05:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-04 05:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-04 05:13:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-04 05:13:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-04 05:13:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-04 05:13:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-04 05:13:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-04 05:13:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-04 05:14:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-04 05:14:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-04 05:14:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-04 05:14:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

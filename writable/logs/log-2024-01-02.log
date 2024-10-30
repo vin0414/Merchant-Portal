@@ -1,0 +1,1904 @@
+CRITICAL - 2024-01-02 01:37:59 --> Undefined variable $route
+in APPPATH/Controllers/Home.php on line 419.
+ 1 APPPATH/Controllers/Home.php(419): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $route', 'APPPATH/Controllers/Home.php', 419)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->Schedules()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:40:46 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home4/cvr8mc2c/merchant/system/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 /home4/cvr8mc2c/merchant/system/BaseModel.php(557): CodeIgniter\Model->doFind(true, '111')
+#6 /home4/cvr8mc2c/merchant/app/Controllers/Home.php(126): CodeIgniter\BaseModel->find('111')
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\Home->AddPassenger()
+#8 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /home4/cvr8mc2c/merchant/system/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 /home4/cvr8mc2c/merchant/system/BaseModel.php(557): CodeIgniter\Model->doFind(true, '111')
+#5 /home4/cvr8mc2c/merchant/app/Controllers/Home.php(126): CodeIgniter\BaseModel->find('111')
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\Home->AddPassenger()
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-02 03:40:46 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tblmerchant`
+WHERE `tblmerchant`.`merchantID` = :tblmerchant.merchantID:', [...], false)
+ 3 SYSTEMPATH/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(557): CodeIgniter\Model->doFind(true, '111')
+ 5 APPPATH/Controllers/Home.php(126): CodeIgniter\BaseModel->find('111')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->AddPassenger()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:40:48 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home4/cvr8mc2c/merchant/system/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 /home4/cvr8mc2c/merchant/system/BaseModel.php(557): CodeIgniter\Model->doFind(true, '111')
+#6 /home4/cvr8mc2c/merchant/app/Controllers/Home.php(103): CodeIgniter\BaseModel->find('111')
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\Home->Book()
+#8 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /home4/cvr8mc2c/merchant/system/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 /home4/cvr8mc2c/merchant/system/BaseModel.php(557): CodeIgniter\Model->doFind(true, '111')
+#5 /home4/cvr8mc2c/merchant/app/Controllers/Home.php(103): CodeIgniter\BaseModel->find('111')
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\Home->Book()
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-02 03:40:48 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tblmerchant`
+WHERE `tblmerchant`.`merchantID` = :tblmerchant.merchantID:', [...], false)
+ 3 SYSTEMPATH/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(557): CodeIgniter\Model->doFind(true, '111')
+ 5 APPPATH/Controllers/Home.php(103): CodeIgniter\BaseModel->find('111')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->Book()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:40:50 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home4/cvr8mc2c/merchant/system/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 /home4/cvr8mc2c/merchant/system/BaseModel.php(557): CodeIgniter\Model->doFind(true, '111')
+#6 /home4/cvr8mc2c/merchant/app/Controllers/Home.php(28): CodeIgniter\BaseModel->find('111')
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\Home->Dashboard()
+#8 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /home4/cvr8mc2c/merchant/system/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 /home4/cvr8mc2c/merchant/system/BaseModel.php(557): CodeIgniter\Model->doFind(true, '111')
+#5 /home4/cvr8mc2c/merchant/app/Controllers/Home.php(28): CodeIgniter\BaseModel->find('111')
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\Home->Dashboard()
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-02 03:40:50 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tblmerchant`
+WHERE `tblmerchant`.`merchantID` = :tblmerchant.merchantID:', [...], false)
+ 3 SYSTEMPATH/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(557): CodeIgniter\Model->doFind(true, '111')
+ 5 APPPATH/Controllers/Home.php(28): CodeIgniter\BaseModel->find('111')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->Dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:40:53 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home4/cvr8mc2c/merchant/system/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 /home4/cvr8mc2c/merchant/system/BaseModel.php(557): CodeIgniter\Model->doFind(true, '111')
+#6 /home4/cvr8mc2c/merchant/app/Controllers/Home.php(28): CodeIgniter\BaseModel->find('111')
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\Home->Dashboard()
+#8 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /home4/cvr8mc2c/merchant/system/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 /home4/cvr8mc2c/merchant/system/BaseModel.php(557): CodeIgniter\Model->doFind(true, '111')
+#5 /home4/cvr8mc2c/merchant/app/Controllers/Home.php(28): CodeIgniter\BaseModel->find('111')
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\Home->Dashboard()
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-02 03:40:53 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tblmerchant`
+WHERE `tblmerchant`.`merchantID` = :tblmerchant.merchantID:', [...], false)
+ 3 SYSTEMPATH/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(557): CodeIgniter\Model->doFind(true, '111')
+ 5 APPPATH/Controllers/Home.php(28): CodeIgniter\BaseModel->find('111')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->Dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:41:18 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(446): CodeIgniter\Database\BaseConnection->query('Select FORMAT(I...', Array)
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->dailyExpenses()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(446): CodeIgniter\Database\BaseConnection->query('Select FORMAT(I...', Array)
+#3 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->dailyExpenses()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-01-02 03:41:18 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/TransactionController.php(446): CodeIgniter\Database\BaseConnection->query('Select FORMAT(IFNULL(SUM(a.TotalAmount),0),2)total from tblcustomer_payment_merchant a LEFT JOIN 
+        (Select agentID,BookingNumber from tblrecords_merchant GROUP BY BookingNumber) b ON b.BookingNumber=a.BookingNumber WHERE a.Remarks=\'PAID\' 
+        AND b.agentID=:user: AND a.TrxnDate=:date:', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->dailyExpenses()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:41:18 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(481): CodeIgniter\Database\BaseConnection->query('Select COUNT(a....', Array)
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->totalReserved()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(481): CodeIgniter\Database\BaseConnection->query('Select COUNT(a....', Array)
+#3 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->totalReserved()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-01-02 03:41:18 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/TransactionController.php(481): CodeIgniter\Database\BaseConnection->query('Select COUNT(a.BookingNumber)total from tblcustomer_payment_merchant a LEFT JOIN
+        (Select agentID,BookingNumber from tblrecords_merchant GROUP BY BookingNumber)b ON b.BookingNumber=a.BookingNumber
+        WHERE b.agentID=:user: AND a.Remarks=\'PAID\'', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->totalReserved()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:41:18 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`Trx...', Array, false)
+#4 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(551): CodeIgniter\Database\BaseBuilder->get()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->Recent()
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`Trx...', Array, false)
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(551): CodeIgniter\Database\BaseBuilder->get()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->Recent()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-02 03:41:18 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`TrxnDate`, `a`.`BookingNumber`, FORMAT(a.TotalAmount, 2)Amount, `a`.`Remarks`, `c`.`Route`
+FROM `tblcustomer_payment_merchant` `a`
+LEFT JOIN `tblrecords_merchant` `b` ON `b`.`BookingNumber`=`a`.`BookingNumber`
+LEFT JOIN `tblschedule` `c` ON `c`.`ID`=`b`.`ID`
+WHERE `b`.`agentID` = :b.agentID:
+GROUP BY `a`.`BookingNumber`
+ORDER BY `a`.`BookingNumber` DESC
+ LIMIT 10', [...], false)
+ 3 APPPATH/Controllers/TransactionController.php(551): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->Recent()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:41:18 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `agentID...', Array, false)
+#4 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(400): CodeIgniter\Database\BaseBuilder->get()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->getBalance()
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `agentID...', Array, false)
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(400): CodeIgniter\Database\BaseBuilder->get()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->getBalance()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-02 03:41:18 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `agentID`
+FROM `tblmerchant`
+WHERE `merchantID` = :merchantID:', [...], false)
+ 3 APPPATH/Controllers/TransactionController.php(400): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->getBalance()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:41:18 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `...', Array, false)
+#4 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(420): CodeIgniter\Database\BaseBuilder->get()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->listSchedules()
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `...', Array, false)
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(420): CodeIgniter\Database\BaseBuilder->get()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->listSchedules()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-02 03:41:18 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `b`.`Name`
+FROM `tblschedule` `a`
+LEFT JOIN `tblvessels` `b` ON `b`.`vesselID`=`a`.`vesselID`
+ORDER BY `a`.`ID` DESC
+ LIMIT 5', [], false)
+ 3 APPPATH/Controllers/TransactionController.php(420): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->listSchedules()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:41:31 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `recordI...', Array, false)
+#4 /home4/cvr8mc2c/merchant/app/Controllers/PassengerController.php(391): CodeIgniter\Database\BaseBuilder->get()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\PassengerController->Passenger()
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `recordI...', Array, false)
+#3 /home4/cvr8mc2c/merchant/app/Controllers/PassengerController.php(391): CodeIgniter\Database\BaseBuilder->get()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\PassengerController->Passenger()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-02 03:41:31 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `recordID`, `Fullname`, `Accommodation`, `SeatNumber`, `BirthDate` as `Age`
+FROM `tblrecords_merchant`
+WHERE `ID` = :ID:
+AND `customerID` = :customerID:
+AND `TrxnDate` = :TrxnDate:
+AND `BookingNumber` = :BookingNumber:
+ORDER BY `recordID` DESC', [...], false)
+ 3 APPPATH/Controllers/PassengerController.php(391): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->Passenger()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:42:45 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home4/cvr8mc2c/merchant/system/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 /home4/cvr8mc2c/merchant/system/BaseModel.php(557): CodeIgniter\Model->doFind(true, '111')
+#6 /home4/cvr8mc2c/merchant/app/Controllers/Home.php(126): CodeIgniter\BaseModel->find('111')
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\Home->AddPassenger()
+#8 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /home4/cvr8mc2c/merchant/system/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 /home4/cvr8mc2c/merchant/system/BaseModel.php(557): CodeIgniter\Model->doFind(true, '111')
+#5 /home4/cvr8mc2c/merchant/app/Controllers/Home.php(126): CodeIgniter\BaseModel->find('111')
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\Home->AddPassenger()
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-02 03:42:45 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tblmerchant`
+WHERE `tblmerchant`.`merchantID` = :tblmerchant.merchantID:', [...], false)
+ 3 SYSTEMPATH/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(557): CodeIgniter\Model->doFind(true, '111')
+ 5 APPPATH/Controllers/Home.php(126): CodeIgniter\BaseModel->find('111')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->AddPassenger()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:42:54 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home4/cvr8mc2c/merchant/system/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 /home4/cvr8mc2c/merchant/system/BaseModel.php(557): CodeIgniter\Model->doFind(true, '111')
+#6 /home4/cvr8mc2c/merchant/app/Controllers/Home.php(28): CodeIgniter\BaseModel->find('111')
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\Home->Dashboard()
+#8 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /home4/cvr8mc2c/merchant/system/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 /home4/cvr8mc2c/merchant/system/BaseModel.php(557): CodeIgniter\Model->doFind(true, '111')
+#5 /home4/cvr8mc2c/merchant/app/Controllers/Home.php(28): CodeIgniter\BaseModel->find('111')
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\Home->Dashboard()
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-02 03:42:54 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tblmerchant`
+WHERE `tblmerchant`.`merchantID` = :tblmerchant.merchantID:', [...], false)
+ 3 SYSTEMPATH/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(557): CodeIgniter\Model->doFind(true, '111')
+ 5 APPPATH/Controllers/Home.php(28): CodeIgniter\BaseModel->find('111')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->Dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:42:58 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(511): CodeIgniter\Database\BaseConnection->query('Select COUNT(a....', Array)
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->totalBook()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(511): CodeIgniter\Database\BaseConnection->query('Select COUNT(a....', Array)
+#3 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->totalBook()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-01-02 03:42:58 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/TransactionController.php(511): CodeIgniter\Database\BaseConnection->query('Select COUNT(a.BookingNumber)total from tblcustomer_payment_merchant a LEFT JOIN
+        (Select agentID,BookingNumber from tblrecords_merchant GROUP BY BookingNumber)b ON b.BookingNumber=a.BookingNumber
+        WHERE b.agentID=:user:', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->totalBook()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:42:58 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(481): CodeIgniter\Database\BaseConnection->query('Select COUNT(a....', Array)
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->totalReserved()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(481): CodeIgniter\Database\BaseConnection->query('Select COUNT(a....', Array)
+#3 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->totalReserved()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-01-02 03:42:58 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/TransactionController.php(481): CodeIgniter\Database\BaseConnection->query('Select COUNT(a.BookingNumber)total from tblcustomer_payment_merchant a LEFT JOIN
+        (Select agentID,BookingNumber from tblrecords_merchant GROUP BY BookingNumber)b ON b.BookingNumber=a.BookingNumber
+        WHERE b.agentID=:user: AND a.Remarks=\'PAID\'', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->totalReserved()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:42:58 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`Trx...', Array, false)
+#4 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(551): CodeIgniter\Database\BaseBuilder->get()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->Recent()
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`Trx...', Array, false)
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(551): CodeIgniter\Database\BaseBuilder->get()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->Recent()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-02 03:42:58 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`TrxnDate`, `a`.`BookingNumber`, FORMAT(a.TotalAmount, 2)Amount, `a`.`Remarks`, `c`.`Route`
+FROM `tblcustomer_payment_merchant` `a`
+LEFT JOIN `tblrecords_merchant` `b` ON `b`.`BookingNumber`=`a`.`BookingNumber`
+LEFT JOIN `tblschedule` `c` ON `c`.`ID`=`b`.`ID`
+WHERE `b`.`agentID` = :b.agentID:
+GROUP BY `a`.`BookingNumber`
+ORDER BY `a`.`BookingNumber` DESC
+ LIMIT 10', [...], false)
+ 3 APPPATH/Controllers/TransactionController.php(551): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->Recent()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:42:58 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `...', Array, false)
+#4 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(420): CodeIgniter\Database\BaseBuilder->get()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->listSchedules()
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `...', Array, false)
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(420): CodeIgniter\Database\BaseBuilder->get()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->listSchedules()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-02 03:42:58 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `b`.`Name`
+FROM `tblschedule` `a`
+LEFT JOIN `tblvessels` `b` ON `b`.`vesselID`=`a`.`vesselID`
+ORDER BY `a`.`ID` DESC
+ LIMIT 5', [], false)
+ 3 APPPATH/Controllers/TransactionController.php(420): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->listSchedules()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:43:05 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`Trx...', Array, false)
+#4 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(551): CodeIgniter\Database\BaseBuilder->get()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->Recent()
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`Trx...', Array, false)
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(551): CodeIgniter\Database\BaseBuilder->get()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->Recent()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-02 03:43:05 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`TrxnDate`, `a`.`BookingNumber`, FORMAT(a.TotalAmount, 2)Amount, `a`.`Remarks`, `c`.`Route`
+FROM `tblcustomer_payment_merchant` `a`
+LEFT JOIN `tblrecords_merchant` `b` ON `b`.`BookingNumber`=`a`.`BookingNumber`
+LEFT JOIN `tblschedule` `c` ON `c`.`ID`=`b`.`ID`
+WHERE `b`.`agentID` = :b.agentID:
+GROUP BY `a`.`BookingNumber`
+ORDER BY `a`.`BookingNumber` DESC
+ LIMIT 10', [...], false)
+ 3 APPPATH/Controllers/TransactionController.php(551): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->Recent()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:43:05 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(481): CodeIgniter\Database\BaseConnection->query('Select COUNT(a....', Array)
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->totalReserved()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(481): CodeIgniter\Database\BaseConnection->query('Select COUNT(a....', Array)
+#3 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->totalReserved()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-01-02 03:43:05 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/TransactionController.php(481): CodeIgniter\Database\BaseConnection->query('Select COUNT(a.BookingNumber)total from tblcustomer_payment_merchant a LEFT JOIN
+        (Select agentID,BookingNumber from tblrecords_merchant GROUP BY BookingNumber)b ON b.BookingNumber=a.BookingNumber
+        WHERE b.agentID=:user: AND a.Remarks=\'PAID\'', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->totalReserved()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:43:05 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(464): CodeIgniter\Database\BaseConnection->query('Select FORMAT(I...', Array)
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->monthlyExpenses()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(464): CodeIgniter\Database\BaseConnection->query('Select FORMAT(I...', Array)
+#3 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->monthlyExpenses()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-01-02 03:43:05 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/TransactionController.php(464): CodeIgniter\Database\BaseConnection->query('Select FORMAT(IFNULL(SUM(a.TotalAmount),0),2)total from tblcustomer_payment_merchant a LEFT JOIN 
+        (Select agentID,BookingNumber from tblrecords_merchant GROUP BY BookingNumber) b ON b.BookingNumber=a.BookingNumber WHERE a.Remarks=\'PAID\' 
+        AND b.agentID=:user: AND DATE_FORMAT(a.TrxnDate,\'%m\')=:month: AND DATE_FORMAT(a.TrxnDate,\'%Y\')=:year:', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->monthlyExpenses()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:43:05 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(446): CodeIgniter\Database\BaseConnection->query('Select FORMAT(I...', Array)
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->dailyExpenses()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(446): CodeIgniter\Database\BaseConnection->query('Select FORMAT(I...', Array)
+#3 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->dailyExpenses()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-01-02 03:43:05 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/TransactionController.php(446): CodeIgniter\Database\BaseConnection->query('Select FORMAT(IFNULL(SUM(a.TotalAmount),0),2)total from tblcustomer_payment_merchant a LEFT JOIN 
+        (Select agentID,BookingNumber from tblrecords_merchant GROUP BY BookingNumber) b ON b.BookingNumber=a.BookingNumber WHERE a.Remarks=\'PAID\' 
+        AND b.agentID=:user: AND a.TrxnDate=:date:', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->dailyExpenses()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:49:51 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(481): CodeIgniter\Database\BaseConnection->query('Select COUNT(a....', Array)
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->totalReserved()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(481): CodeIgniter\Database\BaseConnection->query('Select COUNT(a....', Array)
+#3 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->totalReserved()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-01-02 03:49:51 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/TransactionController.php(481): CodeIgniter\Database\BaseConnection->query('Select COUNT(a.BookingNumber)total from tblcustomer_payment_merchant a LEFT JOIN
+        (Select agentID,BookingNumber from tblrecords_merchant GROUP BY BookingNumber)b ON b.BookingNumber=a.BookingNumber
+        WHERE b.agentID=:user: AND a.Remarks=\'PAID\'', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->totalReserved()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:49:51 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(496): CodeIgniter\Database\BaseConnection->query('Select COUNT(a....', Array)
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->totalPending()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(496): CodeIgniter\Database\BaseConnection->query('Select COUNT(a....', Array)
+#3 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->totalPending()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-01-02 03:49:51 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/TransactionController.php(496): CodeIgniter\Database\BaseConnection->query('Select COUNT(a.BookingNumber)total from tblcustomer_payment_merchant a LEFT JOIN
+        (Select agentID,BookingNumber from tblrecords_merchant GROUP BY BookingNumber)b ON b.BookingNumber=a.BookingNumber
+        WHERE b.agentID=:user: AND a.Remarks=\'Unpaid\'', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->totalPending()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:49:51 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`Trx...', Array, false)
+#4 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(551): CodeIgniter\Database\BaseBuilder->get()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->Recent()
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`Trx...', Array, false)
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(551): CodeIgniter\Database\BaseBuilder->get()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->Recent()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-02 03:49:51 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`TrxnDate`, `a`.`BookingNumber`, FORMAT(a.TotalAmount, 2)Amount, `a`.`Remarks`, `c`.`Route`
+FROM `tblcustomer_payment_merchant` `a`
+LEFT JOIN `tblrecords_merchant` `b` ON `b`.`BookingNumber`=`a`.`BookingNumber`
+LEFT JOIN `tblschedule` `c` ON `c`.`ID`=`b`.`ID`
+WHERE `b`.`agentID` = :b.agentID:
+GROUP BY `a`.`BookingNumber`
+ORDER BY `a`.`BookingNumber` DESC
+ LIMIT 10', [...], false)
+ 3 APPPATH/Controllers/TransactionController.php(551): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->Recent()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:49:51 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(511): CodeIgniter\Database\BaseConnection->query('Select COUNT(a....', Array)
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->totalBook()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(511): CodeIgniter\Database\BaseConnection->query('Select COUNT(a....', Array)
+#3 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->totalBook()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-01-02 03:49:51 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/TransactionController.php(511): CodeIgniter\Database\BaseConnection->query('Select COUNT(a.BookingNumber)total from tblcustomer_payment_merchant a LEFT JOIN
+        (Select agentID,BookingNumber from tblrecords_merchant GROUP BY BookingNumber)b ON b.BookingNumber=a.BookingNumber
+        WHERE b.agentID=:user:', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->totalBook()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:49:51 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `...', Array, false)
+#4 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(420): CodeIgniter\Database\BaseBuilder->get()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->listSchedules()
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `...', Array, false)
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(420): CodeIgniter\Database\BaseBuilder->get()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->listSchedules()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-02 03:49:51 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `b`.`Name`
+FROM `tblschedule` `a`
+LEFT JOIN `tblvessels` `b` ON `b`.`vesselID`=`a`.`vesselID`
+ORDER BY `a`.`ID` DESC
+ LIMIT 5', [], false)
+ 3 APPPATH/Controllers/TransactionController.php(420): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->listSchedules()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:49:54 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `...', Array, false)
+#4 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(420): CodeIgniter\Database\BaseBuilder->get()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->listSchedules()
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `...', Array, false)
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(420): CodeIgniter\Database\BaseBuilder->get()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->listSchedules()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-02 03:49:54 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `b`.`Name`
+FROM `tblschedule` `a`
+LEFT JOIN `tblvessels` `b` ON `b`.`vesselID`=`a`.`vesselID`
+ORDER BY `a`.`ID` DESC
+ LIMIT 5', [], false)
+ 3 APPPATH/Controllers/TransactionController.php(420): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->listSchedules()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:49:54 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(446): CodeIgniter\Database\BaseConnection->query('Select FORMAT(I...', Array)
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->dailyExpenses()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(446): CodeIgniter\Database\BaseConnection->query('Select FORMAT(I...', Array)
+#3 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->dailyExpenses()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-01-02 03:49:54 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/TransactionController.php(446): CodeIgniter\Database\BaseConnection->query('Select FORMAT(IFNULL(SUM(a.TotalAmount),0),2)total from tblcustomer_payment_merchant a LEFT JOIN 
+        (Select agentID,BookingNumber from tblrecords_merchant GROUP BY BookingNumber) b ON b.BookingNumber=a.BookingNumber WHERE a.Remarks=\'PAID\' 
+        AND b.agentID=:user: AND a.TrxnDate=:date:', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->dailyExpenses()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:49:54 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(481): CodeIgniter\Database\BaseConnection->query('Select COUNT(a....', Array)
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->totalReserved()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(481): CodeIgniter\Database\BaseConnection->query('Select COUNT(a....', Array)
+#3 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->totalReserved()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-01-02 03:49:54 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/TransactionController.php(481): CodeIgniter\Database\BaseConnection->query('Select COUNT(a.BookingNumber)total from tblcustomer_payment_merchant a LEFT JOIN
+        (Select agentID,BookingNumber from tblrecords_merchant GROUP BY BookingNumber)b ON b.BookingNumber=a.BookingNumber
+        WHERE b.agentID=:user: AND a.Remarks=\'PAID\'', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->totalReserved()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:49:54 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `agentID...', Array, false)
+#4 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(400): CodeIgniter\Database\BaseBuilder->get()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->getBalance()
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `agentID...', Array, false)
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(400): CodeIgniter\Database\BaseBuilder->get()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->getBalance()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-02 03:49:54 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `agentID`
+FROM `tblmerchant`
+WHERE `merchantID` = :merchantID:', [...], false)
+ 3 APPPATH/Controllers/TransactionController.php(400): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->getBalance()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:49:56 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`Trx...', Array, false)
+#4 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(551): CodeIgniter\Database\BaseBuilder->get()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->Recent()
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`Trx...', Array, false)
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(551): CodeIgniter\Database\BaseBuilder->get()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->Recent()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-02 03:49:56 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`TrxnDate`, `a`.`BookingNumber`, FORMAT(a.TotalAmount, 2)Amount, `a`.`Remarks`, `c`.`Route`
+FROM `tblcustomer_payment_merchant` `a`
+LEFT JOIN `tblrecords_merchant` `b` ON `b`.`BookingNumber`=`a`.`BookingNumber`
+LEFT JOIN `tblschedule` `c` ON `c`.`ID`=`b`.`ID`
+WHERE `b`.`agentID` = :b.agentID:
+GROUP BY `a`.`BookingNumber`
+ORDER BY `a`.`BookingNumber` DESC
+ LIMIT 10', [...], false)
+ 3 APPPATH/Controllers/TransactionController.php(551): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->Recent()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:49:56 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(464): CodeIgniter\Database\BaseConnection->query('Select FORMAT(I...', Array)
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->monthlyExpenses()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(464): CodeIgniter\Database\BaseConnection->query('Select FORMAT(I...', Array)
+#3 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->monthlyExpenses()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-01-02 03:49:56 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/TransactionController.php(464): CodeIgniter\Database\BaseConnection->query('Select FORMAT(IFNULL(SUM(a.TotalAmount),0),2)total from tblcustomer_payment_merchant a LEFT JOIN 
+        (Select agentID,BookingNumber from tblrecords_merchant GROUP BY BookingNumber) b ON b.BookingNumber=a.BookingNumber WHERE a.Remarks=\'PAID\' 
+        AND b.agentID=:user: AND DATE_FORMAT(a.TrxnDate,\'%m\')=:month: AND DATE_FORMAT(a.TrxnDate,\'%Y\')=:year:', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->monthlyExpenses()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:49:56 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(481): CodeIgniter\Database\BaseConnection->query('Select COUNT(a....', Array)
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->totalReserved()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(481): CodeIgniter\Database\BaseConnection->query('Select COUNT(a....', Array)
+#3 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->totalReserved()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-01-02 03:49:56 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/TransactionController.php(481): CodeIgniter\Database\BaseConnection->query('Select COUNT(a.BookingNumber)total from tblcustomer_payment_merchant a LEFT JOIN
+        (Select agentID,BookingNumber from tblrecords_merchant GROUP BY BookingNumber)b ON b.BookingNumber=a.BookingNumber
+        WHERE b.agentID=:user: AND a.Remarks=\'PAID\'', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->totalReserved()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:49:56 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(511): CodeIgniter\Database\BaseConnection->query('Select COUNT(a....', Array)
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->totalBook()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(511): CodeIgniter\Database\BaseConnection->query('Select COUNT(a....', Array)
+#3 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->totalBook()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-01-02 03:49:56 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/TransactionController.php(511): CodeIgniter\Database\BaseConnection->query('Select COUNT(a.BookingNumber)total from tblcustomer_payment_merchant a LEFT JOIN
+        (Select agentID,BookingNumber from tblrecords_merchant GROUP BY BookingNumber)b ON b.BookingNumber=a.BookingNumber
+        WHERE b.agentID=:user:', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->totalBook()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:49:56 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(496): CodeIgniter\Database\BaseConnection->query('Select COUNT(a....', Array)
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->totalPending()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(496): CodeIgniter\Database\BaseConnection->query('Select COUNT(a....', Array)
+#3 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->totalPending()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-01-02 03:49:56 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/TransactionController.php(496): CodeIgniter\Database\BaseConnection->query('Select COUNT(a.BookingNumber)total from tblcustomer_payment_merchant a LEFT JOIN
+        (Select agentID,BookingNumber from tblrecords_merchant GROUP BY BookingNumber)b ON b.BookingNumber=a.BookingNumber
+        WHERE b.agentID=:user: AND a.Remarks=\'Unpaid\'', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->totalPending()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:49:56 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `agentID...', Array, false)
+#4 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(400): CodeIgniter\Database\BaseBuilder->get()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->getBalance()
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `agentID...', Array, false)
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(400): CodeIgniter\Database\BaseBuilder->get()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->getBalance()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-02 03:49:56 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `agentID`
+FROM `tblmerchant`
+WHERE `merchantID` = :merchantID:', [...], false)
+ 3 APPPATH/Controllers/TransactionController.php(400): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->getBalance()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:51:45 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `portID`...', Array, false)
+#4 /home4/cvr8mc2c/merchant/app/Controllers/Home.php(314): CodeIgniter\Database\BaseBuilder->get()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\Home->fetchRate()
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `portID`...', Array, false)
+#3 /home4/cvr8mc2c/merchant/app/Controllers/Home.php(314): CodeIgniter\Database\BaseBuilder->get()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\Home->fetchRate()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-02 03:51:45 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `portID`
+FROM `tblschedule`
+WHERE `ID` = :ID:', [...], false)
+ 3 APPPATH/Controllers/Home.php(314): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->fetchRate()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:51:51 --> mysqli_sql_exception: Unknown column 'a.recordID' in 'on clause' in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT IFNULL(S...', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT IFNULL(S...')
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT IFNULL(S...')
+#3 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT IFNULL(S...', Array, false)
+#4 /home4/cvr8mc2c/merchant/app/Controllers/PassengerController.php(364): CodeIgniter\Database\BaseBuilder->get()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\PassengerController->Summary()
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-02 03:51:51 --> Unknown column 'a.recordID' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT IFNULL(SUM(a.NetAmount), 0)price
+FROM `tblcargo_merchant` `a`
+LEFT JOIN `tblrecords_merchant` `b` ON `b`.`customerID`=`a`.`recordID`
+WHERE `a`.`userID` = :a.userID:
+AND `a`.`BookingNumber` = :a.BookingNumber:
+AND `b`.`TrxnDate` = :b.TrxnDate:
+AND `b`.`Status` = :b.Status:
+AND `a`.`ID` = :a.ID:', [...], false)
+ 2 APPPATH/Controllers/PassengerController.php(364): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->Summary()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:52:00 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT IFNULL(S...', Array, false)
+#4 /home4/cvr8mc2c/merchant/app/Controllers/PassengerController.php(355): CodeIgniter\Database\BaseBuilder->get()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\PassengerController->Summary()
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT IFNULL(S...', Array, false)
+#3 /home4/cvr8mc2c/merchant/app/Controllers/PassengerController.php(355): CodeIgniter\Database\BaseBuilder->get()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\PassengerController->Summary()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-02 03:52:00 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT IFNULL(SUM(Amount), 0)total
+FROM `tblrecords_merchant`
+WHERE `customerID` = :customerID:
+AND `BookingNumber` = :BookingNumber:
+AND `TrxnDate` = :TrxnDate:
+AND `Status` = :Status:
+AND `ID` = :ID:', [...], false)
+ 3 APPPATH/Controllers/PassengerController.php(355): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->Summary()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:52:13 --> mysqli_sql_exception: Unknown column 'a.recordID' in 'on clause' in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT IFNULL(S...', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT IFNULL(S...')
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT IFNULL(S...')
+#3 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT IFNULL(S...', Array, false)
+#4 /home4/cvr8mc2c/merchant/app/Controllers/PassengerController.php(364): CodeIgniter\Database\BaseBuilder->get()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\PassengerController->Summary()
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-02 03:52:13 --> Unknown column 'a.recordID' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT IFNULL(SUM(a.NetAmount), 0)price
+FROM `tblcargo_merchant` `a`
+LEFT JOIN `tblrecords_merchant` `b` ON `b`.`customerID`=`a`.`recordID`
+WHERE `a`.`userID` = :a.userID:
+AND `a`.`BookingNumber` = :a.BookingNumber:
+AND `b`.`TrxnDate` = :b.TrxnDate:
+AND `b`.`Status` = :b.Status:
+AND `a`.`ID` = :a.ID:', [...], false)
+ 2 APPPATH/Controllers/PassengerController.php(364): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->Summary()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:52:59 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `Discoun...', Array, false)
+#4 /home4/cvr8mc2c/merchant/app/Controllers/PassengerController.php(311): CodeIgniter\Database\BaseBuilder->get()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\PassengerController->Discount()
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `Discoun...', Array, false)
+#3 /home4/cvr8mc2c/merchant/app/Controllers/PassengerController.php(311): CodeIgniter\Database\BaseBuilder->get()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\PassengerController->Discount()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-02 03:52:59 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `Discount`
+FROM `tblagentroute`
+WHERE `agentID` = :agentID:
+AND `portID` = :portID:', [...], false)
+ 3 APPPATH/Controllers/PassengerController.php(311): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->Discount()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:53:06 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `Discoun...', Array, false)
+#4 /home4/cvr8mc2c/merchant/app/Controllers/PassengerController.php(311): CodeIgniter\Database\BaseBuilder->get()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\PassengerController->Discount()
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `Discoun...', Array, false)
+#3 /home4/cvr8mc2c/merchant/app/Controllers/PassengerController.php(311): CodeIgniter\Database\BaseBuilder->get()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\PassengerController->Discount()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-02 03:53:06 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `Discount`
+FROM `tblagentroute`
+WHERE `agentID` = :agentID:
+AND `portID` = :portID:', [...], false)
+ 3 APPPATH/Controllers/PassengerController.php(311): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->Discount()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:53:06 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT IFNULL(S...', Array, false)
+#4 /home4/cvr8mc2c/merchant/app/Controllers/PassengerController.php(355): CodeIgniter\Database\BaseBuilder->get()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\PassengerController->Summary()
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT IFNULL(S...', Array, false)
+#3 /home4/cvr8mc2c/merchant/app/Controllers/PassengerController.php(355): CodeIgniter\Database\BaseBuilder->get()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\PassengerController->Summary()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-02 03:53:06 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT IFNULL(SUM(Amount), 0)total
+FROM `tblrecords_merchant`
+WHERE `customerID` = :customerID:
+AND `BookingNumber` = :BookingNumber:
+AND `TrxnDate` = :TrxnDate:
+AND `Status` = :Status:
+AND `ID` = :ID:', [...], false)
+ 3 APPPATH/Controllers/PassengerController.php(355): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->Summary()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:53:21 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `recordI...', Array, false)
+#4 /home4/cvr8mc2c/merchant/app/Controllers/PassengerController.php(391): CodeIgniter\Database\BaseBuilder->get()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\PassengerController->Passenger()
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `recordI...', Array, false)
+#3 /home4/cvr8mc2c/merchant/app/Controllers/PassengerController.php(391): CodeIgniter\Database\BaseBuilder->get()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\PassengerController->Passenger()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-02 03:53:21 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `recordID`, `Fullname`, `Accommodation`, `SeatNumber`, `BirthDate` as `Age`
+FROM `tblrecords_merchant`
+WHERE `ID` = :ID:
+AND `customerID` = :customerID:
+AND `TrxnDate` = :TrxnDate:
+AND `BookingNumber` = :BookingNumber:
+ORDER BY `recordID` DESC', [...], false)
+ 3 APPPATH/Controllers/PassengerController.php(391): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->Passenger()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:54:00 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(511): CodeIgniter\Database\BaseConnection->query('Select COUNT(a....', Array)
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->totalBook()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(511): CodeIgniter\Database\BaseConnection->query('Select COUNT(a....', Array)
+#3 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->totalBook()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-01-02 03:54:00 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/TransactionController.php(511): CodeIgniter\Database\BaseConnection->query('Select COUNT(a.BookingNumber)total from tblcustomer_payment_merchant a LEFT JOIN
+        (Select agentID,BookingNumber from tblrecords_merchant GROUP BY BookingNumber)b ON b.BookingNumber=a.BookingNumber
+        WHERE b.agentID=:user:', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->totalBook()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:54:00 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(496): CodeIgniter\Database\BaseConnection->query('Select COUNT(a....', Array)
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->totalPending()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(496): CodeIgniter\Database\BaseConnection->query('Select COUNT(a....', Array)
+#3 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->totalPending()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-01-02 03:54:00 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/TransactionController.php(496): CodeIgniter\Database\BaseConnection->query('Select COUNT(a.BookingNumber)total from tblcustomer_payment_merchant a LEFT JOIN
+        (Select agentID,BookingNumber from tblrecords_merchant GROUP BY BookingNumber)b ON b.BookingNumber=a.BookingNumber
+        WHERE b.agentID=:user: AND a.Remarks=\'Unpaid\'', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->totalPending()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:54:00 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `agentID...', Array, false)
+#4 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(400): CodeIgniter\Database\BaseBuilder->get()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->getBalance()
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `agentID...', Array, false)
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(400): CodeIgniter\Database\BaseBuilder->get()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->getBalance()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-02 03:54:00 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `agentID`
+FROM `tblmerchant`
+WHERE `merchantID` = :merchantID:', [...], false)
+ 3 APPPATH/Controllers/TransactionController.php(400): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->getBalance()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:54:03 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home4/cvr8mc2c/merchant/system/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 /home4/cvr8mc2c/merchant/system/BaseModel.php(557): CodeIgniter\Model->doFind(true, '111')
+#6 /home4/cvr8mc2c/merchant/app/Controllers/Home.php(28): CodeIgniter\BaseModel->find('111')
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\Home->Dashboard()
+#8 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /home4/cvr8mc2c/merchant/system/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 /home4/cvr8mc2c/merchant/system/BaseModel.php(557): CodeIgniter\Model->doFind(true, '111')
+#5 /home4/cvr8mc2c/merchant/app/Controllers/Home.php(28): CodeIgniter\BaseModel->find('111')
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\Home->Dashboard()
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-02 03:54:03 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tblmerchant`
+WHERE `tblmerchant`.`merchantID` = :tblmerchant.merchantID:', [...], false)
+ 3 SYSTEMPATH/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(557): CodeIgniter\Model->doFind(true, '111')
+ 5 APPPATH/Controllers/Home.php(28): CodeIgniter\BaseModel->find('111')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->Dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:54:06 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `...', Array, false)
+#4 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(420): CodeIgniter\Database\BaseBuilder->get()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->listSchedules()
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `...', Array, false)
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(420): CodeIgniter\Database\BaseBuilder->get()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->listSchedules()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-02 03:54:06 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `b`.`Name`
+FROM `tblschedule` `a`
+LEFT JOIN `tblvessels` `b` ON `b`.`vesselID`=`a`.`vesselID`
+ORDER BY `a`.`ID` DESC
+ LIMIT 5', [], false)
+ 3 APPPATH/Controllers/TransactionController.php(420): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->listSchedules()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:54:06 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(481): CodeIgniter\Database\BaseConnection->query('Select COUNT(a....', Array)
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->totalReserved()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(481): CodeIgniter\Database\BaseConnection->query('Select COUNT(a....', Array)
+#3 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->totalReserved()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-01-02 03:54:06 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/TransactionController.php(481): CodeIgniter\Database\BaseConnection->query('Select COUNT(a.BookingNumber)total from tblcustomer_payment_merchant a LEFT JOIN
+        (Select agentID,BookingNumber from tblrecords_merchant GROUP BY BookingNumber)b ON b.BookingNumber=a.BookingNumber
+        WHERE b.agentID=:user: AND a.Remarks=\'PAID\'', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->totalReserved()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:54:06 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(464): CodeIgniter\Database\BaseConnection->query('Select FORMAT(I...', Array)
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->monthlyExpenses()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(464): CodeIgniter\Database\BaseConnection->query('Select FORMAT(I...', Array)
+#3 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->monthlyExpenses()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-01-02 03:54:06 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/TransactionController.php(464): CodeIgniter\Database\BaseConnection->query('Select FORMAT(IFNULL(SUM(a.TotalAmount),0),2)total from tblcustomer_payment_merchant a LEFT JOIN 
+        (Select agentID,BookingNumber from tblrecords_merchant GROUP BY BookingNumber) b ON b.BookingNumber=a.BookingNumber WHERE a.Remarks=\'PAID\' 
+        AND b.agentID=:user: AND DATE_FORMAT(a.TrxnDate,\'%m\')=:month: AND DATE_FORMAT(a.TrxnDate,\'%Y\')=:year:', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->monthlyExpenses()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:54:06 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`Trx...', Array, false)
+#4 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(551): CodeIgniter\Database\BaseBuilder->get()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->Recent()
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#7 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`Trx...', Array, false)
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(551): CodeIgniter\Database\BaseBuilder->get()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->Recent()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-02 03:54:06 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`TrxnDate`, `a`.`BookingNumber`, FORMAT(a.TotalAmount, 2)Amount, `a`.`Remarks`, `c`.`Route`
+FROM `tblcustomer_payment_merchant` `a`
+LEFT JOIN `tblrecords_merchant` `b` ON `b`.`BookingNumber`=`a`.`BookingNumber`
+LEFT JOIN `tblschedule` `c` ON `c`.`ID`=`b`.`ID`
+WHERE `b`.`agentID` = :b.agentID:
+GROUP BY `a`.`BookingNumber`
+ORDER BY `a`.`BookingNumber` DESC
+ LIMIT 10', [...], false)
+ 3 APPPATH/Controllers/TransactionController.php(551): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->Recent()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-02 03:54:06 --> Error connecting to the database: mysqli_sql_exception: User cvr8mc2c_9285_cg already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'cvr8mc2c_9285_c...', Object(SensitiveParameterValue), 'cvr8mc2c_ticket...', 3306, '', 0)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(446): CodeIgniter\Database\BaseConnection->query('Select FORMAT(I...', Array)
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->dailyExpenses()
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#6 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: User **** already has more than 'max_user_connections' active connections in /home4/cvr8mc2c/merchant/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home4/cvr8mc2c/merchant/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home4/cvr8mc2c/merchant/app/Controllers/TransactionController.php(446): CodeIgniter\Database\BaseConnection->query('Select FORMAT(I...', Array)
+#3 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(934): App\Controllers\TransactionController->dailyExpenses()
+#4 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#5 /home4/cvr8mc2c/merchant/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home4/cvr8mc2c/merchant.fastcat-book.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-01-02 03:54:06 --> Unable to connect to the database.
+Main connection [MySQLi]: User **** already has more than 'max_user_connections' active connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/TransactionController.php(446): CodeIgniter\Database\BaseConnection->query('Select FORMAT(IFNULL(SUM(a.TotalAmount),0),2)total from tblcustomer_payment_merchant a LEFT JOIN 
+        (Select agentID,BookingNumber from tblrecords_merchant GROUP BY BookingNumber) b ON b.BookingNumber=a.BookingNumber WHERE a.Remarks=\'PAID\' 
+        AND b.agentID=:user: AND a.TrxnDate=:date:', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->dailyExpenses()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-02 08:13:33 --> Call to undefined function App\Controllers\WHERE()
+in APPPATH/Controllers/TransactionController.php on line 178.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TransactionController->eticket('IA-0000004-1')
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

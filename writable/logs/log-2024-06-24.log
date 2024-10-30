@@ -1,0 +1,7 @@
+CRITICAL - 2024-06-24 02:25:42 --> Undefined variable $resultData
+in APPPATH/Controllers/PassengerController.php on line 590.
+ 1 APPPATH/Controllers/PassengerController.php(590): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultData', 'APPPATH/Controllers/PassengerController.php', 590)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->savePassenger()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

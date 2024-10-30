@@ -1,0 +1,14 @@
+CRITICAL - 2024-02-06 01:12:19 --> Undefined variable $route
+in APPPATH/Controllers/Home.php on line 354.
+ 1 APPPATH/Controllers/Home.php(354): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $route', 'APPPATH/Controllers/Home.php', 354)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->Schedules()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-06 11:31:37 --> Undefined variable $route
+in APPPATH/Controllers/Home.php on line 419.
+ 1 APPPATH/Controllers/Home.php(419): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $route', 'APPPATH/Controllers/Home.php', 419)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->Schedules()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

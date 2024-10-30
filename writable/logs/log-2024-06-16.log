@@ -1,0 +1,18 @@
+CRITICAL - 2024-06-16 04:15:23 --> Value of type bool is not callable
+in APPPATH/Controllers/PassengerController.php on line 1094.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->getOnlineAccommodations()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:15:57 --> Value of type bool is not callable
+in APPPATH/Controllers/PassengerController.php on line 1094.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->getOnlineAccommodations()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 04:17:29 --> Value of type bool is not callable
+in APPPATH/Controllers/PassengerController.php on line 1094.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PassengerController->getOnlineAccommodations()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PassengerController))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
