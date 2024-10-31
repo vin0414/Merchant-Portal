@@ -33,13 +33,11 @@ class Email extends BaseConfig
     /**
      * SMTP Username
      */
-    public string $SMTPUser = 'admin@fastcat-book.com';
-    //public string $SMTPUser = 'fastcatbook@gmail.com';
+    public string $SMTPUser = '';
     /**
      * SMTP Password
      */
-    public string $SMTPPass = 'khqjgcyxnfrqdbhg';
-    //public string $SMTPPass = 'aehudnippttkikcc';
+    public string $SMTPPass = '';
     /**
      * SMTP Port
      */
