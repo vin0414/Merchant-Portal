@@ -258,20 +258,68 @@ class PassengerController extends BaseController
                 'Remarks'=>'Unpaid',
                 ];
         $paymentModel->save($value);
+        //generate seat number
         //update the tblrecords
         $builder = $this->db->table('tblrecords_merchant');
-        $builder->select('recordID');
+        $builder->select('recordID,Accommodation');
         $builder->WHERE('ID',$id)->WHERE('TrxnDate',$date);
         $builder->WHERE('agentID',$agent)->WHERE('customerID',$user);
         $builder->WHERE('BookingNumber','')->WHERE('Status',0);
         $data = $builder->get();
         foreach($data->getResult() as $row)
         {
-            $values = [
-                'BookingNumber'=>$code,
-                'Status'=>1,
-            ];
-            $savePassenger->update($row->recordID,$values);
+            $capacity=0;$key="";
+            if($row->Accommodation=="Business Class")
+            {
+                $key = "B";
+            }
+            else if($row->Accommodation=="Premium Economy")
+            {
+                $key = "P";
+            }
+            else if($row->Accommodation=="Economy")
+            {
+                $key = "E";
+            }
+            else
+            {
+                $key = "PWD";
+            }
+            
+            //get the capacity of the vessel
+            $builder = $this->db->table('tblcapacity');
+            $builder->select('Capacity');
+            $builder->WHERE('vesselID',$vessel)->WHERE('Seat_Type',$row->Accommodation);
+            $cap = $builder->get();
+            if($rows = $cap->getRow())
+            {
+                $capacity = $rows->Capacity;
+            }
+            $list = array();$lists = array();
+            for($x=1;$x<=$capacity;$x++)
+            {
+                array_push($list,sprintf("%03d",$x).$key);
+            }
+            $numbers = array();
+            $builder = $this->db->table('accommodation_capacity_v2');
+            $builder->select('SeatNumber');
+            $builder->WHERE('Seat_Type',$row->Accommodation)->WHERE('ID',$id)->WHERE('TrxnDate',$date);
+            $datas = $builder->get();
+            foreach($datas->getResult() as $rowx)
+            {
+                array_push($numbers,$rowx->SeatNumber);
+            }
+            $lists = array_diff($list,$numbers);
+            $Obj = json_decode(json_encode($lists));
+            foreach($Obj as $object)
+            {
+                $values = [
+                    'SeatNumber'=>$object,
+                    'BookingNumber'=>$code,
+                    'Status'=>1,
+                ];
+                $savePassenger->update($row->recordID,$values);
+            }
         }
         //update the admin fee
         $builder = $this->db->table('tblconvenience_merchant');
@@ -572,7 +620,7 @@ class PassengerController extends BaseController
                 {
                     array_push($list,sprintf("%03d",$x).$key);
                 }
-                $seat_num="";$numbers = array();
+                $numbers = array();
                 $builder = $this->db->table('accommodation_capacity_v2');
                 $builder->select('SeatNumber');
                 $builder->WHERE('Seat_Type',$seat)->WHERE('ID',$schedule)->WHERE('TrxnDate',$date);
@@ -591,7 +639,7 @@ class PassengerController extends BaseController
                     echo 'The maximum seat capacity has been reached for the selected accommodation.';
                     return;
                 }
-                $seat_num = $resultData[0];
+                $seat_num = "TBD";
                 if($pass_type=="DRIVER")
                 {
                     //validate if already added
